@@ -19,5 +19,4 @@ Plataforma para centralizar a comunicação e o compartilhamento de exames entre
 - Buscando minha primeira oportunidade profissional em TI
 
 ## Contato
-
-[LinkedIn] www.linkedin.com/in/julia-oliveira-0b4845290 · 
+www.linkedin.com/in/julia-oliveira-0b4845290 · 
