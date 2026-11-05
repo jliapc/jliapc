@@ -84,6 +84,7 @@ main section {
     justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
+    scroll-margin-top: 110px; /* para ter uma "folga" entre o menu fixo e não cortar o título */
 }
 
 /* SEÇÃO 1: INÍCIO (HERO SECTION) */
