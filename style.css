@@ -8,25 +8,30 @@
     --text-color: #1B1E3B;
     --font-main: 'Poppins', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-main);
     line-height: 1.6;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 ul {
     list-style: none;
 }
+
 /* CABEÇALHO / MENU DE NAVEGAÇÃO FIXO */
 .header {
     position: fixed;
@@ -42,29 +47,35 @@ ul {
     align-items: center;
     padding: 1.5rem 5%;
 }
+
 .logo img {
     height: 40px;
     width: auto;
 }
+
 .navbar ul {
     display: flex;
     gap: 2.5rem;
 }
+
 .navbar a {
     font-weight: 400;
     font-size: 1.05rem;
     color: var(--text-color);
     transition: color 0.3s ease;
 }
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--primary-pink);
     font-weight: 500;
 }
+
 /* ESTRUTURA GERAL DAS SEÇÕES */
 main {
     padding-top: 100px; /* Espaço para o menu fixo */
 }
+
 main section {
     min-height: calc(100vh - 100px);
     padding: 4rem 5%;
@@ -75,6 +86,7 @@ main section {
     margin: 0 auto;
     scroll-margin-top: 110px; /* para ter uma "folga" entre o menu fixo e não cortar o título */
 }
+
 /* SEÇÃO 1: INÍCIO (HERO SECTION) */
 .hero-section {
     flex-direction: row;
@@ -82,53 +94,64 @@ main section {
     justify-content: space-between;
     gap: 3rem;
 }
+
 .hero-content {
     flex: 1;
 }
+
 .hero-content h1 {
     font-size: 3.5rem;
     color: var(--primary-pink);
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
 .hero-content h2 {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
+
 .tech-stack {
     color: var(--primary-pink);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
+
 .subtitle {
     color: #555;
     margin-bottom: 2rem;
 }
+
 .social-links {
     display: flex;
     gap: 1.5rem;
 }
+
 .social-links a {
     font-size: 1.5rem;
     color: var(--primary-pink);
     transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .social-links a:hover {
     color: var(--text-color);
     transform: translateY(-3px);
 }
+
 .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 .hero-image img {
     width: 100%;
     max-width: 450px;
     border-radius: 40px;
     object-fit: cover;
 }
+
 /* SEÇÃO 2: SERVIÇOS */
 .services-section h2,
 .about-section h2,
@@ -140,39 +163,47 @@ main section {
     margin-bottom: 2.5rem;
     text-align: left;
 }
+
 .services-container {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
+
 .services-illustration {
     flex: 1;
 }
+
 .services-illustration img {
     width: 100%;
     max-width: 500px;
     border-radius: 30px;
 }
+
 .services-list {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .service-card h3 {
     font-size: 1.3rem;
     color: var(--primary-pink);
     margin-bottom: 0.3rem;
 }
+
 .service-card p {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
 }
+
 .service-card .tags {
     font-size: 0.85rem;
     color: #666;
     display: block;
 }
+
 /* SEÇÃO 3: QUEM SOU EU */
 .about-section {
     flex-direction: row;
@@ -180,87 +211,107 @@ main section {
     justify-content: space-between;
     gap: 4rem;
 }
+
 .about-content {
     flex: 1;
 }
+
 .about-content p {
     margin-bottom: 1.2rem;
     font-size: 1.05rem;
 }
+
 .about-image {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 .about-image img {
     width: 100%;
     max-width: 450px;
     border-radius: 40px;
     object-fit: cover;
 }
+
 /* SEÇÃO 4: PROJETOS (RADFLOW) */
 .project-detail {
     max-width: 900px;
 }
+
 .project-detail h2 {
     font-size: 2.5rem;
     color: var(--primary-pink);
     margin-bottom: 1.5rem;
 }
+
 .project-detail p {
     margin-bottom: 1.2rem;
     font-size: 1.05rem;
     text-align: justify;
 }
+
 /* SEÇÃO 5: FLUXO DO RADFLOW E LOGIN */
 .flow-section {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;        /* Garante que o texto e a imagem fiquem lado a lado */
+    align-items: center;        /* Alinha ambos verticalmente ao centro */
+    justify-content: space-between; /* Espaça uniformemente os dois lados */
     gap: 4rem;
+    width: 100%;
 }
+
 .flow-content {
-    flex: 1;
+    flex: 1;                    /* Ocupa a metade esquerda */
 }
+
 .flow-steps {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
 }
+
 .step h3 {
     font-size: 1.15rem;
     color: var(--text-color);
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
+
 .step p {
     font-size: 0.95rem;
     color: #444;
 }
+
 .flow-image {
-    flex: 1;
+    flex: 1;                    /* Ocupa a metade direita */
     display: flex;
     justify-content: center;
 }
+
 .flow-image img {
     width: 100%;
     max-width: 420px;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
+
 /* SEÇÃO 6: CONTATO */
 .contact-section {
     justify-content: center;
 }
+
 .contact-container {
     max-width: 800px;
 }
+
 .contact-list {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
     margin-top: 1rem;
 }
+
 .contact-list li a {
     display: flex;
     align-items: center;
@@ -269,16 +320,19 @@ main section {
     color: var(--text-color);
     transition: transform 0.2s ease, color 0.2s ease;
 }
+
 .contact-list li a i {
     font-size: 2rem;
     color: var(--primary-pink);
     min-width: 40px;
     text-align: center;
 }
+
 .contact-list li a:hover {
     color: var(--primary-pink);
     transform: translateX(5px);
 }
+
 /* RESPONSIVIDADE (MOBILE E TABLETS)*/
 @media (max-width: 968px) {
     .header {
@@ -286,16 +340,20 @@ main section {
         gap: 1.5rem;
         padding: 1.2rem;
     }
+
     .navbar ul {
         gap: 1.5rem;
     }
+
     main {
         padding-top: 140px;
     }
+
     main section {
         min-height: auto;
         padding: 3rem 1.5rem;
     }
+
     .hero-section,
     .about-section,
     .services-container,
@@ -304,6 +362,7 @@ main section {
         text-align: center;
         gap: 2.5rem;
     }
+
     .services-section h2,
     .about-section h2,
     .project-detail h2,
@@ -311,9 +370,11 @@ main section {
     .contact-section h2 {
         text-align: center;
     }
+
     .social-links {
         justify-content: center;
     }
+
     .services-list,
     .flow-steps {
         text-align: left;
@@ -333,6 +394,7 @@ main section {
 .radflow-screens-section {
     padding: 3rem 5%;
 }
+
 .screens-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas lado a lado no desktop */
@@ -340,12 +402,14 @@ main section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .screen-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .screen-card img {
     width: 100%;
     height: auto;
@@ -354,19 +418,23 @@ main section {
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
 }
+
 .screen-card img:hover {
     transform: translateY(-5px); /* Efeito suave ao passar o mouse */
 }
+
 .screen-card h3 {
     font-size: 1.05rem;
     color: var(--text-color);
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
+
 .screen-card p {
     font-size: 0.9rem;
     color: #666;
 }
+
 /* Ajuste Responsivo para Celulares */
 @media (max-width: 768px) {
     .screens-grid {
