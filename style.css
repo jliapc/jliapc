@@ -1,4 +1,6 @@
-/* VARIÁVEIS E CONFIGURAÇÕES GLOBAIS */
+/* =========================================
+   VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
+   ========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
 :root {
@@ -32,7 +34,9 @@ ul {
     list-style: none;
 }
 
-/* CABEÇALHO / MENU DE NAVEGAÇÃO FIXO */
+/* =========================================
+   CABEÇALHO / MENU DE NAVEGAÇÃO FIXO
+   ========================================= */
 .header {
     position: fixed;
     top: 0;
@@ -71,7 +75,9 @@ ul {
     font-weight: 500;
 }
 
-/* ESTRUTURA GERAL DAS SEÇÕES */
+/* =========================================
+   ESTRUTURA GERAL DAS SEÇÕES
+   ========================================= */
 main {
     padding-top: 100px; /* Espaço para o menu fixo */
 }
@@ -86,7 +92,9 @@ main section {
     margin: 0 auto;
 }
 
-/* SEÇÃO 1: INÍCIO (HERO SECTION) */
+/* =========================================
+   SEÇÃO 1: INÍCIO (HERO SECTION)
+   ========================================= */
 .hero-section {
     flex-direction: row;
     align-items: center;
@@ -151,7 +159,9 @@ main section {
     object-fit: cover;
 }
 
-/* SEÇÃO 2: SERVIÇOS */
+/* =========================================
+   SEÇÃO 2: SERVIÇOS
+   ========================================= */
 .services-section h2,
 .about-section h2,
 .projects-section h2,
@@ -203,7 +213,9 @@ main section {
     display: block;
 }
 
-/* SEÇÃO 3: QUEM SOU EU */
+/* =========================================
+   SEÇÃO 3: QUEM SOU EU
+   ========================================= */
 .about-section {
     flex-direction: row;
     align-items: center;
@@ -233,7 +245,9 @@ main section {
     object-fit: cover;
 }
 
-/* SEÇÃO 4: PROJETOS (RADFLOW) */
+/* =========================================
+   SEÇÃO 4: PROJETOS (RADFLOW)
+   ========================================= */
 .project-detail {
     max-width: 900px;
 }
@@ -250,7 +264,9 @@ main section {
     text-align: justify;
 }
 
-/* SEÇÃO 5: FLUXO DO RADFLOW E LOGIN */
+/* =========================================
+   SEÇÃO 5: FLUXO DO RADFLOW E LOGIN
+   ========================================= */
 .flow-section {
     flex-direction: row;
     align-items: center;
@@ -293,7 +309,9 @@ main section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* SEÇÃO 6: CONTATO */
+/* =========================================
+   SEÇÃO 6: CONTATO
+   ========================================= */
 .contact-section {
     justify-content: center;
 }
@@ -330,7 +348,9 @@ main section {
     transform: translateX(5px);
 }
 
-/* RESPONSIVIDADE (MOBILE E TABLETS)*/
+/* =========================================
+   RESPONSIVIDADE (MOBILE E TABLETS)
+   ========================================= */
 @media (max-width: 968px) {
     .header {
         flex-direction: column;
