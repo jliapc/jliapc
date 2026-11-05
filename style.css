@@ -35,15 +35,21 @@ ul {
 }
 
 /* =========================================
-   CABEÇALHO / MENU DE NAVEGAÇÃO
+   CABEÇALHO / MENU DE NAVEGAÇÃO FIXO
    ========================================= */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 1.5rem 5%;
 }
 
 .logo img {
@@ -72,6 +78,10 @@ ul {
 /* =========================================
    ESTRUTURA GERAL DAS SEÇÕES
    ========================================= */
+main {
+    padding-top: 100px; /* Compensa o espaço do menu fixo no topo */
+}
+
 main section {
     min-height: calc(100vh - 100px);
     padding: 4rem 5%;
@@ -259,11 +269,15 @@ main section {
     .header {
         flex-direction: column;
         gap: 1.5rem;
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
 
     .navbar ul {
         gap: 1.5rem;
+    }
+
+    main {
+        padding-top: 140px; /* Em telas menores o menu empilha e ocupa mais espaço vertical */
     }
 
     main section {
